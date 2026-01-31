@@ -28,8 +28,10 @@
       <ul class="navbar-nav">
         <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -39,16 +41,23 @@
   <section id="home" class="hero">
     <div class="container">
       <div class="hero-content">
+        <div class="hero-profile">
+          <img src="Whatsap.jpeg" alt="Manmath Mohanty" class="profile-picture">
+        </div>
         <h1 class="hero-title">
           Hi, I'm <span class="hero-gradient-text">Manmath Mohanty</span>
         </h1>
-        <p class="hero-subtitle">Linux Developer • Android Developer • DevSecOps • Full-Stack Developer • Blockchain
-          Engineer</p>
+        <p class="hero-subtitle">Full-Stack Developer • Linux Systems • Blockchain Engineer • AI/ML Enthusiast</p>
         <p class="hero-description">
-          Crafting robust, scalable solutions across the entire technology stack.
-          From kernel-level Linux development to sleek Android apps, secure DevOps pipelines,
-          and comprehensive full-stack applications.
+          Full-Stack Software Developer with expertise in physics-based simulations, Linux systems, and open-source
+          development.
+          Multi-hackathon winner with a strong foundation in data structures and algorithms.
+          Experienced in high-performance frontends, reactive libraries, and distributed systems.
         </p>
+        <div class="hero-contact-info">
+          <a href="tel:+919752834140" class="contact-link">📞 +91 9752834140</a>
+          <a href="mailto:manmath.mohanty@adypu.edu.in" class="contact-link">✉️ manmath.mohanty@adypu.edu.in</a>
+        </div>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">View My Work</a>
           <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -89,6 +98,39 @@
           <div class="skill-icon">⛓️</div>
           <h3>Blockchain Engineering</h3>
           <p>Decentralized applications, smart contracts, Web3 integration, and distributed ledger technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Work Experience</h2>
+      </div>
+      <div class="experience-timeline">
+        <div class="experience-card glass-card fade-in">
+          <div class="experience-header">
+            <div>
+              <h3>Frontend Developer & UI Designer</h3>
+              <h4 class="company-name">Get Interview Confidence</h4>
+            </div>
+            <div class="experience-date">April 2025 – Present</div>
+          </div>
+          <ul class="experience-details">
+            <li>Built responsive UIs with <strong>Next.js</strong> and <strong>Tailwind</strong>, improving UX by 30%
+            </li>
+            <li>Reduced development time by 25% by converting Figma designs into reusable UI systems</li>
+            <li>Collaborated with 3+ product and design teams to deliver production-ready interfaces</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">UI/UX</span>
+            <span class="tech-tag">React</span>
+          </div>
         </div>
       </div>
     </div>
@@ -202,28 +244,116 @@
       </div>
       <div class="projects-grid">
         <div class="project-card glass-card">
-          <img src="project-placeholder.png" alt="Project"
+          <img src="project-placeholder.png" alt="Trajectory Detector"
             style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
           <div class="project-overlay">
-            <h3>Enterprise Linux Automation</h3>
-            <p>Automated deployment and configuration management system for 500+ Linux servers</p>
+            <h3>Trajectory Detector</h3>
+            <p>Real-time mission-control dashboard with React.js, Next.js, and Framer Motion. Node.js/Express backend
+              handling 5K+ events/min with 3D space simulations using Three.js and NASA APIs (60 FPS)</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <p class="project-date">December 2025</p>
           </div>
         </div>
         <div class="project-card glass-card">
-          <img src="project-placeholder.png" alt="Project"
+          <img src="project-placeholder.png" alt="MISAI"
             style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
           <div class="project-overlay">
-            <h3>Android Fitness Tracker</h3>
-            <p>Feature-rich fitness application with real-time tracking and analytics</p>
+            <h3>MISAI</h3>
+            <p>Evaluation engine for hallucination and adversarial tests with secure real-time scoring APIs (150ms
+              latency). Multi-model benchmarking pipelines improving accuracy by 40%+</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LLM</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">ML</span>
+            </div>
+            <p class="project-date">October 2025</p>
           </div>
         </div>
         <div class="project-card glass-card">
-          <img src="project-placeholder.png" alt="Project"
+          <img src="project-placeholder.png" alt="Exoplanet Detector"
             style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
           <div class="project-overlay">
-            <h3>Secure CI/CD Pipeline</h3>
-            <p>Kubernetes-based deployment pipeline with integrated security scanning</p>
+            <h3>Exoplanet Detector</h3>
+            <p>Physics-driven detection engine using transit photometry and ML/NumPy. Signal processing (FFT, wavelet
+              filtering) reducing false positives by 38% with automated LLM validation</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">ML</span>
+              <span class="tech-tag">LLM</span>
+              <span class="tech-tag">FFT</span>
+            </div>
+            <p class="project-date">September 2025</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="education-grid">
+        <div class="education-card glass-card fade-in">
+          <h3>Bachelor of Technology (AI & ML)</h3>
+          <h4 class="institution-name">Newton School Of Technology, ADYPU Pune</h4>
+          <p class="education-date">2024 – 2028</p>
+          <p class="education-grade">Grade: 8.64/10.0</p>
+        </div>
+        <div class="education-card glass-card fade-in">
+          <h3>Intermediate (Class XII)</h3>
+          <h4 class="institution-name">Sri Sankara Vidhilaya, Bhilai</h4>
+          <p class="education-date">2023 – 2024</p>
+          <p class="education-grade">Grade: 70.0%</p>
+        </div>
+        <div class="education-card glass-card fade-in">
+          <h3>Matriculation (Class X)</h3>
+          <h4 class="institution-name">Jyoti Hr. Sec. Eng. Med. School, Durg</h4>
+          <p class="education-date">2021 – 2022</p>
+          <p class="education-grade">Grade: 85.6%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Certifications -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Achievements & Certifications</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card fade-in">
+          <div class="achievement-icon">🏆</div>
+          <h3>NASA Space Apps — Global Finalist</h3>
+          <p class="achievement-date">August 2024</p>
+          <p>Recognized globally for innovation and problem-solving in space technology</p>
+        </div>
+        <div class="achievement-card glass-card fade-in">
+          <div class="achievement-icon">🔒</div>
+          <h3>Google Security Program</h3>
+          <p class="achievement-date">June 2024</p>
+          <p>Hands-on experience in cybersecurity and threat detection</p>
+        </div>
+        <div class="achievement-card glass-card fade-in">
+          <div class="achievement-icon">🥇</div>
+          <h3>Nirman Hackathon Winner</h3>
+          <p>Led team to first place with an innovative real-world solution</p>
+        </div>
+        <div class="achievement-card glass-card fade-in">
+          <div class="achievement-icon">🐧</div>
+          <h3>Customized Linux Distributions</h3>
+          <p>Built optimized distros with kernel-level tweaks and custom tooling</p>
         </div>
       </div>
     </div>
@@ -251,17 +381,27 @@
                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
             </svg>
           </a>
-          <a href="mailto:manmath@example.com" class="social-link" aria-label="Email">
+          <a href="mailto:manmath.mohanty@adypu.edu.in" class="social-link" aria-label="Email">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
           </a>
-          <a href="https://twitter.com/manmathmohanty" class="social-link" aria-label="Twitter" target="_blank">
+          <a href="https://www.codechef.com/users/manmathmohanty" class="social-link" aria-label="CodeChef"
+            target="_blank">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-              </path>
+              <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="14" font-weight="bold">CC</text>
+            </svg>
+          </a>
+          <a href="https://codeforces.com/profile/manmathmohanty" class="social-link" aria-label="Codeforces"
+            target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="14" font-weight="bold">CF</text>
+            </svg>
+          </a>
+          <a href="https://leetcode.com/manmathmohanty" class="social-link" aria-label="LeetCode" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="14" font-weight="bold">LC</text>
             </svg>
           </a>
         </div>
