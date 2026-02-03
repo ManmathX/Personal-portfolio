@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Glowing cursor effect
   initGlowingCursor();
+
+  // Lightning effects
+  initLightning();
 });
 
 // ============================================
@@ -327,7 +330,7 @@ function initParticles() {
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0, 212, 255, 0.3)';
+      ctx.fillStyle = 'rgba(255, 8, 68, 0.4)';
       ctx.fill();
     }
   }
@@ -354,7 +357,7 @@ function initParticles() {
           ctx.beginPath();
           ctx.moveTo(particle.x, particle.y);
           ctx.lineTo(otherParticle.x, otherParticle.y);
-          ctx.strokeStyle = `rgba(0, 212, 255, ${0.2 * (1 - distance / 150)})`;
+          ctx.strokeStyle = `rgba(255, 8, 68, ${0.3 * (1 - distance / 150)})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
@@ -411,12 +414,28 @@ function initGlowingCursor() {
   interactiveElements.forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
-      cursor.style.backgroundColor = 'rgba(139, 92, 246, 0.3)';
+      cursor.style.backgroundColor = 'rgba(255, 107, 53, 0.4)';
     });
 
     el.addEventListener('mouseleave', () => {
       cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-      cursor.style.backgroundColor = 'rgba(0, 212, 255, 0.2)';
+      cursor.style.backgroundColor = 'rgba(255, 8, 68, 0.25)';
     });
   });
+}
+
+// ============================================
+// Lightning Effect
+// ============================================
+function initLightning() {
+  const lightningContainer = document.createElement('div');
+  lightningContainer.className = 'lightning-container';
+  document.body.appendChild(lightningContainer);
+
+  // Create 3 lightning bolts
+  for (let i = 0; i < 3; i++) {
+    const bolt = document.createElement('div');
+    bolt.className = 'lightning-bolt';
+    lightningContainer.appendChild(bolt);
+  }
 }
