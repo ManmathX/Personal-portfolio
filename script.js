@@ -23,6 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Glowing cursor effect
   initGlowingCursor();
+
+  // Humanizing effects
+  initBlobBackgrounds();
+  initMagneticCursor();
+  init3DTilt();
+  initStaggerAnimations();
+  initEnhancedTyping();
 });
 
 // ============================================
@@ -252,7 +259,7 @@ function initSnowfall() {
   snowContainer.className = 'snow-container';
   document.body.appendChild(snowContainer);
 
-  const snowflakeCount = 50;
+  const snowflakeCount = 20; // Reduced from 50 for performance
 
   for (let i = 0; i < snowflakeCount; i++) {
     createSnowflake(snowContainer);
@@ -263,7 +270,7 @@ function initSnowfall() {
     if (snowContainer.children.length < snowflakeCount) {
       createSnowflake(snowContainer);
     }
-  }, 300);
+  }, 500); // Increased interval from 300ms to 500ms
 }
 
 function createSnowflake(container) {
@@ -305,7 +312,7 @@ function initParticles() {
   canvas.height = window.innerHeight;
 
   const particles = [];
-  const particleCount = 80;
+  const particleCount = 40; // Reduced from 80 for performance
 
   class Particle {
     constructor() {
@@ -420,3 +427,137 @@ function initGlowingCursor() {
     });
   });
 }
+
+// ============================================
+// Blob Backgrounds
+// ============================================
+function initBlobBackgrounds() {
+  const blobContainer = document.createElement('div');
+  blobContainer.className = 'blob-container';
+
+  for (let i = 1; i <= 3; i++) {
+    const blob = document.createElement('div');
+    blob.className = `blob blob-${i}`;
+    blobContainer.appendChild(blob);
+  }
+
+  document.body.insertBefore(blobContainer, document.body.firstChild);
+}
+
+// ============================================
+// Magnetic Cursor Effect
+// ============================================
+function initMagneticCursor() {
+  const magneticElements = document.querySelectorAll('.project-card, .skill-card, .btn');
+
+  magneticElements.forEach(el => {
+    el.classList.add('magnetic');
+
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      const moveX = x * 0.15;
+      const moveY = y * 0.15;
+
+      el.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
+    });
+  });
+}
+
+// ============================================
+// 3D Tilt Effect
+// ============================================
+function init3DTilt() {
+  const tiltCards = document.querySelectorAll('.glass-card');
+
+  tiltCards.forEach(card => {
+    card.classList.add('tilt-card');
+
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = (y - centerY) / 10;
+      const rotateY = (centerX - x) / 10;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+}
+
+// ============================================
+// Stagger Animations
+// ============================================
+function initStaggerAnimations() {
+  const projectCards = document.querySelectorAll('.project-card');
+  const skillCards = document.querySelectorAll('.skill-card');
+
+  projectCards.forEach(card => card.classList.add('stagger-item'));
+  skillCards.forEach(card => card.classList.add('stagger-item'));
+}
+
+// ============================================
+// Enhanced Typing Effect
+// ============================================
+function initEnhancedTyping() {
+  const heroTitle = document.querySelector('.hero-title');
+  if (!heroTitle) return;
+
+  const text = heroTitle.textContent;
+  heroTitle.textContent = '';
+  heroTitle.style.opacity = '1';
+
+  let charIndex = 0;
+
+  function typeChar() {
+    if (charIndex < text.length) {
+      heroTitle.textContent += text.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeChar, 50);
+    } else {
+      // Add blinking cursor after typing completes
+      const cursor = document.createElement('span');
+      cursor.className = 'typing-cursor';
+      heroTitle.appendChild(cursor);
+    }
+  }
+
+  setTimeout(typeChar, 500);
+}
+
+// ============================================
+// Add SVG Doodles
+// ============================================
+function addDoodles() {
+  const sections = document.querySelectorAll('.section-title');
+
+  sections.forEach((section, index) => {
+    if (index % 2 === 0) {
+      const star = document.createElement('span');
+      star.className = 'doodle-star';
+      star.innerHTML = '✨';
+      star.style.top = '-20px';
+      star.style.right = '20px';
+      section.style.position = 'relative';
+      section.appendChild(star);
+    }
+  });
+}
+
+// Initialize doodles
+setTimeout(addDoodles, 1000);
+

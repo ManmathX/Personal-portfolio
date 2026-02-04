@@ -70,7 +70,7 @@
   <section id="skills" class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Core Competencies</h2>
+        <h2><span class="handwritten-underline">Core Competencies</span></h2>
       </div>
       <div class="skills-grid">
         <div class="skill-card glass-card">
@@ -107,7 +107,7 @@
   <section id="experience" class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Work Experience</h2>
+        <h2><span class="handwritten-underline">Work Experience</span></h2>
       </div>
       <div class="experience-timeline">
         <div class="experience-card glass-card fade-in">
@@ -240,57 +240,159 @@
   <section id="projects" class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Featured Projects</h2>
+        <h2><span class="handwritten-underline">Featured Projects</span></h2>
       </div>
       <div class="projects-grid">
-        <div class="project-card glass-card">
-          <img src="project-placeholder.png" alt="Trajectory Detector"
+        <!-- Project 1: NASA Mission - Exoplanet Discovery -->
+        <div class="project-card glass-card"
+          onclick="window.open('https://github.com/ManmathX/Nasa_mission', '_blank')">
+          <img src="nasa_mission.png" alt="NASA Mission - Exoplanet Discovery"
             style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
           <div class="project-overlay">
-            <h3>Trajectory Detector</h3>
-            <p>Real-time mission-control dashboard with React.js, Next.js, and Framer Motion. Node.js/Express backend
-              handling 5K+ events/min with 3D space simulations using Three.js and NASA APIs (60 FPS)</p>
+            <h3>🚀 NASA Mission - Exoplanet Discovery</h3>
+            <p>AI-powered platform for exoplanet discovery with LLM training, 3D solar system simulations, and
+              interactive React frontend. Features human-in-the-loop learning and FastAPI backend.</p>
             <div class="tech-tags" style="margin-top: 1rem;">
-              <span class="tech-tag">React.js</span>
-              <span class="tech-tag">Next.js</span>
-              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">LLM</span>
+            </div>
+            <p class="project-date">2024 • NASA Space Apps Global Finalist</p>
+          </div>
+        </div>
+
+        <!-- Project 2: BlockShop - Blockchain E-commerce -->
+        <div class="project-card glass-card"
+          onclick="window.open('https://github.com/ManmathX/Rust-BlockChainProject', '_blank')">
+          <img src="blockshop.png" alt="BlockShop - Blockchain E-commerce"
+            style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
+          <div class="project-overlay">
+            <h3>🛍️ BlockShop - Blockchain E-commerce</h3>
+            <p>Decentralized e-commerce with proof-of-work mining, SHA-256 hashing, and glassmorphic UI. Features wallet
+              integration and real-time blockchain explorer built with Rust and React.</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">Rust</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Blockchain</span>
+              <span class="tech-tag">Actix-web</span>
+              <span class="tech-tag">SHA-256</span>
+            </div>
+            <p class="project-date">2025 • Full-Stack Blockchain</p>
+          </div>
+        </div>
+
+        <!-- Project 3: PCOS Early Detection App -->
+        <div class="project-card glass-card" onclick="window.open('https://github.com/ManmathX/PCOS', '_blank')">
+          <img src="project-placeholder.png" alt="PCOS Early Detection App"
+            style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
+          <div class="project-overlay">
+            <h3>⚕️ PCOS Early Detection & Guidance</h3>
+            <p>Production-ready health app with explainable AI risk scoring, cycle prediction, and dual roles
+              (User/Doctor). Features gamification, PDF reports, and consent-based patient management.</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">React</span>
               <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">JWT</span>
             </div>
-            <p class="project-date">December 2025</p>
+            <p class="project-date">2025 • Healthcare Tech</p>
           </div>
         </div>
-        <div class="project-card glass-card">
-          <img src="project-placeholder.png" alt="MISAI"
+
+        <!-- Project 4: MISAI - Misinformation Detection -->
+        <div class="project-card glass-card" onclick="window.open('https://github.com/ManmathX/MISAI-', '_blank')">
+          <img src="misai.png" alt="MISAI - AI Fact Checking"
             style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
           <div class="project-overlay">
-            <h3>MISAI</h3>
-            <p>Evaluation engine for hallucination and adversarial tests with secure real-time scoring APIs (150ms
-              latency). Multi-model benchmarking pipelines improving accuracy by 40%+</p>
+            <h3>🛡️ MISAI - AI Truth Sentinel</h3>
+            <p>Multi-model fact-checking system with deepfake detection. Features MisBot chatbot, image/video forensics,
+              and model benchmarking using CARS and CACE scoring metrics.</p>
             <div class="tech-tags" style="margin-top: 1rem;">
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">LLM</span>
-              <span class="tech-tag">API</span>
-              <span class="tech-tag">ML</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Gemini</span>
+              <span class="tech-tag">OpenAI</span>
             </div>
-            <p class="project-date">October 2025</p>
+            <p class="project-date">2025 • AI Safety & Verification</p>
           </div>
         </div>
-        <div class="project-card glass-card">
-          <img src="project-placeholder.png" alt="Exoplanet Detector"
+
+        <!-- Project 5: Medication Work (React Native) -->
+        <div class="project-card glass-card"
+          onclick="window.open('https://github.com/ManmathX/Medication_work', '_blank')">
+          <img src="medication.png" alt="Medication Management App"
             style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
           <div class="project-overlay">
-            <h3>Exoplanet Detector</h3>
-            <p>Physics-driven detection engine using transit photometry and ML/NumPy. Signal processing (FFT, wavelet
-              filtering) reducing false positives by 38% with automated LLM validation</p>
+            <h3>💊 Medication Management</h3>
+            <p>React Native mobile application for medication tracking and reminders. Cross-platform solution for iOS
+              and Android with intuitive UI and notification system.</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Mobile</span>
+              <span class="tech-tag">Healthcare</span>
+            </div>
+            <p class="project-date">2025 • Mobile Development</p>
+          </div>
+        </div>
+
+        <!-- Project 6: Zero Proof Hub (Inlegal Store) -->
+        <div class="project-card glass-card"
+          onclick="window.open('https://github.com/ManmathX/Inlegal_store', '_blank')">
+          <img src="zero_proof.png" alt="Zero Proof Hub"
+            style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
+          <div class="project-overlay">
+            <h3>🏪 Zero Proof Hub</h3>
+            <p>Community platform for sharing legal-but-feels-illegal experiences. Features voting system, comments, and
+              responsive design. Built as college project with full-stack capabilities.</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+            <p class="project-date">2024 • College Project</p>
+          </div>
+        </div>
+
+        <!-- Project 7: Quick Court Detector -->
+        <div class="project-card glass-card" onclick="window.open('https://github.com/ManmathX/Quick_Court', '_blank')">
+          <img src="quick_court.png" alt="Quick Court Detector"
+            style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
+          <div class="project-overlay">
+            <h3>🎾 Quick Court Detector</h3>
+            <p>Sports court detection system for identifying and analyzing sports courts. Computer vision application
+              for real-time court recognition and classification.</p>
             <div class="tech-tags" style="margin-top: 1rem;">
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Computer Vision</span>
               <span class="tech-tag">ML</span>
-              <span class="tech-tag">LLM</span>
-              <span class="tech-tag">FFT</span>
+              <span class="tech-tag">OpenCV</span>
             </div>
-            <p class="project-date">September 2025</p>
+            <p class="project-date">2025 • Sports Tech</p>
+          </div>
+        </div>
+
+        <!-- Project 8: NASA Exoplanets Research -->
+        <div class="project-card glass-card"
+          onclick="window.open('https://github.com/ManmathX/NASA_EXOPLANETS', '_blank')">
+          <img src="nasa_exoplanets.png" alt="NASA Exoplanets Research"
+            style="width: 100%; height: 250px; object-fit: cover; border-radius: 16px;">
+          <div class="project-overlay">
+            <h3>🌍 NASA Exoplanets Research</h3>
+            <p>React app with WebGL orb effects displaying NASA exoplanet data. Features Python web scraper for
+              real-time data, gradient animations, and habitable zone indicators.</p>
+            <div class="tech-tags" style="margin-top: 1rem;">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">WebGL</span>
+              <span class="tech-tag">BeautifulSoup</span>
+            </div>
+            <p class="project-date">2024 • Space Research</p>
           </div>
         </div>
       </div>
@@ -301,7 +403,7 @@
   <section id="education" class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Education</h2>
+        <h2><span class="handwritten-underline">Education</span></h2>
       </div>
       <div class="education-grid">
         <div class="education-card glass-card fade-in">
@@ -319,7 +421,7 @@
   <section id="achievements" class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Achievements & Certifications</h2>
+        <h2><span class="handwritten-underline">Achievements & Certifications</span></h2>
       </div>
       <div class="achievements-grid">
         <div class="achievement-card glass-card fade-in">
